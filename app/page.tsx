@@ -219,8 +219,10 @@ export default function Page() {
                   src="/profile.jpg"
                   alt="Ghanshyam Gadekar"
                   fill
+                  sizes="(max-width: 768px) 192px, 256px"
                   className="object-cover"
                   priority
+                  unoptimized
                 />
               </div>
             </div>
