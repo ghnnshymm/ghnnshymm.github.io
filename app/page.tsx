@@ -216,11 +216,11 @@ export default function Page() {
               </div>
               <div className="w-48 h-48 md:w-64 md:h-64 relative rounded-full overflow-hidden border-4 border-zinc-800/50 shadow-xl">
                 <Image
-                  src="/profile.jpg"
+                  src="/profile.png"
                   alt="Ghanshyam Gadekar"
-                  fill
-                  sizes="(max-width: 768px) 192px, 256px"
-                  className="object-cover"
+                  width={256}
+                  height={256}
+                  className="object-cover w-full h-full"
                   priority
                   unoptimized
                 />
