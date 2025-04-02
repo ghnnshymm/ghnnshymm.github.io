@@ -13,6 +13,7 @@ const nextConfig = {
   },
   basePath: '',
   assetPrefix: '',
+  trailingSlash: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -22,7 +23,6 @@ const nextConfig = {
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
-    parallelServerCompiles: true,
   },
 }
 

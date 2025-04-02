@@ -3,6 +3,7 @@ import { Github, Linkedin, Mail, FileText, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import ProjectCard from "./components/project-card"
 import SkillsSection from "./components/skills-section"
+import Image from "next/image"
 
 export default function Page() {
   return (
@@ -196,20 +197,31 @@ export default function Page() {
           <div className="absolute inset-0 bg-gradient-radial from-blue-900/20 to-transparent"></div>
           <div className="absolute inset-0 bg-[url('/placeholder.svg?height=50&width=50')] opacity-5"></div>
           <div className="container relative z-10 px-4 md:px-6">
-            <div className="max-w-3xl mx-auto">
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-relaxed py-3 mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-violet-500">
-                AI Engineer
-              </h1>
-              <p className="text-xl md:text-2xl text-zinc-400 mb-8 max-w-2xl leading-relaxed">
-                Engineering Intelligence with AI & Deep Learning 🚀
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Button asChild className="bg-blue-600 hover:bg-blue-700">
-                  <Link href="#contact">Get in touch</Link>
-                </Button>
-                <Button asChild variant="outline" className="border-zinc-800 hover:bg-zinc-900">
-                  <Link href="#projects">View projects</Link>
-                </Button>
+            <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-8">
+              <div className="flex-1">
+                <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-relaxed py-3 mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-violet-500">
+                  AI Engineer
+                </h1>
+                <p className="text-xl md:text-2xl text-zinc-400 mb-8 max-w-2xl leading-relaxed">
+                  Engineering Intelligence with AI & Deep Learning 🚀
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  <Button asChild className="bg-blue-600 hover:bg-blue-700">
+                    <Link href="#contact">Get in touch</Link>
+                  </Button>
+                  <Button asChild variant="outline" className="border-zinc-800 hover:bg-zinc-900">
+                    <Link href="#projects">View projects</Link>
+                  </Button>
+                </div>
+              </div>
+              <div className="w-48 h-48 md:w-64 md:h-64 relative rounded-full overflow-hidden border-4 border-zinc-800/50 shadow-xl">
+                <Image
+                  src="/profile.jpg"
+                  alt="Ghanshyam Gadekar"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
             </div>
           </div>
